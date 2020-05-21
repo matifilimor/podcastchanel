@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast Channel</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500%7CIBM+Plex+Sans:400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f1e6b5bbc6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container container-lg flex">
+        <div class="logo">
+          <a href="#">
+            <img src="./img/logo.svg" alt="Blue Dot logo" />
+          </a>
+        </div>
+        <input id="toggle" type="checkbox" name="Mobile menu toggler button" />
+        <label
+          for="toggle"
+          class="hamburger"
+          aria-label="Mobile menu toggler icon"
+        >
+          <span class="mobile-button mb-top"></span>
+          <span class="mobile-button mb-mid"></span>
+          <span class="mobile-button mb-bot"></span>
+        </label>
+        <ul class="menu-items">
+          <li>
+            <a href="#episodes" class="link">
+              episodios
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="link">
+              nosotros
+            </a>
+          </li>
+          <li>
+            <a href="#guests" class="link">
+              entrevistas
+            </a>
+          </li>
+          <li>
+            <a href="#topics" class="link">
+              tópicos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <header class="header-container container-sm">
+    <h1>Hello <span class="lineamedio">world</span> pale blue dot<span class="punto">.</span></h1>
+    <p>
+      El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos
+      los jueves cada 15 días.
+    </p>
+    <a class="btn" href="#about">conocé más</a>
+  </header>
+  <section class="episodes" id="episodes">
+    <h2 class="container-sm">Episodios</h2>
+    <div class="container-lg">
+      <div class="iframe-container flex" style="overflow-x: hidden">
+        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+         width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed-podcast/episode/1sQaSIJJshH7X3eyjR4Jpr"
+          width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+          width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"
+        ></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
+        width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+  <section class="about flex container-lg" id="about">
+    <div class="about-img">
+      <img
+        src="./img/phone.png"
+        alt="The secret history of Women in Coding"
+        title="The secret history of Women in Coding"
+      />
+    </div>
+    <div class="about-txt">
+      <h2>
+        De dónde venimos
+      </h2>
+      <p>
+        Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+        the Universe, are challenged by this point of pale light.
+        <br /><br />
+        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+        vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+      </p>
+    </div>
+  </section>
+  <section class="guests" id="guests">
+    <h2 class="container-sm">Invitadas/os estelares</h2>
+    <div class="">
+      <div class="img-container flex" style="overflow-x: hidden">
+        <img
+          src="./img/grace-hopper.png"
+          alt="Grace Hopper"
+          title="Grace Hopper"
+        />
+        <img
+          src="./img/Katie-Bouman.png"
+          alt="Katie Bouman"
+          title="Katie Bouman"
+        />
+        <img
+          src="./img/Margaret_Hamilton.png"
+          alt="Margaret Hamilton"
+          title="Margaret Hamilton"
+        />
+        <img
+          src="./img/An E.R.A.Univac 1103 computer in the 1950s.png"
+          alt="An E.R.A.Univac 1103 computer in the 1950s"
+          title="An E.R.A.Univac 1103 computer in the 1950s"
+        />
+        <img
+          src="./img/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+          alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer"
+          title="Computer operators with an Eniac — the world’s first programmable general-purpose computer"
+        />
+        <img
+          src="./img/susan-kare.png"
+          alt="Susan Kare"
+          title="Susan Kare"
+        />
+      </div>
+    </div>
+  </section>
+  <section class="topics-container flex" id="topics">
+    <div class="container-sm">
+      <h2>Algunos de nuestros temas</h2>
+      <div class="img-container flex" style="overflow-x: hidden">
+        <div class="topic flex">
+          <img src="./img/icon1.svg" alt="Ícono Micrófono" />
+          <h3>Trabajo Remoto</h3>
+        </div>
+        <div class="topic flex">
+          <img src="./img/icon2.svg" alt="Ícono Film" />
+          <h3>
+            Repensando la programación
+          </h3>
+        </div>
+        <div class="topic flex">
+          <img src="./img/icon3.svg" alt="Ícono Reproductor de Música"  />
+          <h3>Bases del código</h3>
+        </div>
+        <div class="topic flex">
+          <img src="./img/icon4.svg" alt="Ícono Mixer de Audio" />
+          <h3>
+            Seguridad informática
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="container-lg flex">
+      <h2>¿Querés las últimas novedades?</h2>
+      <a href="https://open.spotify.com/" class="btn"
+        >Escuchá los episodios <i class="fab fa-spotify fa-lg"></i>
+      </a>
+    </div>
+  </section>
+  <footer class="footer container-lg flex">
+    <p>© 2019 — Hello blue pale dot</p>
+    <div class="social flex">
+      <a href="https://spotify.com" class="vibrate link">
+        <i class="fab fa-spotify"></i>
+      </a>
+      <a href="https://instagram.com" class="vibrate link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com" class="vibrate link">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.facebook.com" class="vibrate link">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://podcasts.apple.com/" class="vibrate link">
+        <i class="fab fa-telegram"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
+  </body>
+</html>
